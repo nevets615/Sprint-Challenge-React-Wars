@@ -26,12 +26,15 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React js is a library which is used for building single page applications. It also allows us to create reusable components. It lets use build components in different files and import those into one.
 - [ ] What does it mean to _think_ in react?
 
+your breaking up your web page into different components and making them simple so they are reusable. it lets each react separately and help with speed.
+
 - [ ] Describe state.
-
+its the heart of a web page. it pumps information out that can be used.
 - [ ] Describe props.
-
+its the blood of the web page. it distrubutes the information so it can be used and displayed.
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
