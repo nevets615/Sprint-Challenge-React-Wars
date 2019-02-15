@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Character from './components/Character'
 
 class starwarsChars extends Component {
   constructor() {
@@ -47,33 +48,17 @@ class starwarsChars extends Component {
 
   render() {
     return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
-        <Character/>
-        <CharacterForm
-           birth_year: {this.state.birth_year}
-           created: {this.state.created}
-           edited: {this.state.edited}
-           eye_color: {this.state.eye_color}
-           films: {this.state.films}
-           gender: {this.state.gender}
-           hair_color: {this.state.hair_color}
-           height: {this.state.height}
-           homeworld: {this.state.homeworld}
-           mass: {this.state.mass}
-           name: {this.state.name}
-           skin_color: {this.state.skin_color}
-           species: {this.state.species}
-           starships: {this.state.starships}
-           url: {this.state.url}
-           vehicles: {this.state.vehicles}
-           />
+      <div>
+      <h1>Starwars Characters:</h1>
+      <div className="name-list">
+      {this.state.starwarsChars.map((starwarsCharsFromMap, index) => (
+          <Character key={index} starwarsChars={starwarsCharsFromMap} />
+        ))}
       </div>
-    );
-  }
-}
+  </div>
 
-export default App;
+
+export default starwarsChars;
 
 
 

@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './StarWarsChars';
 
 function App() {
     return (
-      <div className="starwars">
-        < starwarsChars/>
+      <div className="App">
+        < StarWarsChars/>
         
       </div>
     );
