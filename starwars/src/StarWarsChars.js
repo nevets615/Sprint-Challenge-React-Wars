@@ -2,27 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import Character from './components/Character'
 
-class starwarsChars extends Component {
+class StarWarsChars extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: starwarsChars,
-      birth_year: "",
-      created: "",
-      edited: "",
-      eye_color: "",
-      films: "",
-      gender: "",
-      hair_color: "",
-      height: "",
-      homeworld: "",
-      mass:"",
-      name: "",
-      skin_color: "",
-      species: "",
-      starships: "",
-      url: "",
-      vehicles: ""
+      starwarsChars: []
     };
   }
 
@@ -49,16 +33,17 @@ class starwarsChars extends Component {
   render() {
     return (
       <div>
-      <h1>Starwars Characters:</h1>
+      <h1>Star Wars Characters:</h1>
       <div className="name-list">
       {this.state.starwarsChars.map((starwarsCharsFromMap, index) => (
           <Character key={index} starwarsChars={starwarsCharsFromMap} />
         ))}
       </div>
   </div>
-
-
-export default starwarsChars;
+    );
+}
+}
+export default StarWarsChars;
 
 
 
